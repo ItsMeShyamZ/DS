@@ -33,3 +33,5 @@ arrayReverseWithSwap(start: 0,end: input.count-1)
 
 print("ReverseArray With Swap is :-",input)
 
+//Mark  :- Rearrange an array such that arr[i] = i
+
