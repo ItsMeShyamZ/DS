@@ -35,3 +35,28 @@ print("ReverseArray With Swap is :-",input)
 
 //Mark  :- Rearrange an array such that arr[i] = i
 
+
+func reverseArray1(input   : [Int])->[Int]{
+    var output = [Int]()
+    for   i in  0..<input.count{
+        output.append(input[(input.count-1)-i])
+    }
+    return output
+}
+
+print("ReverseArray is :-",reverseArray1(input: input))
+
+
+func arrayReverseWithSwap1(start  : Int,end : Int) {
+   
+    if !(start  >=  end){
+        var temp = input[start]
+        input[start] = input[end]
+        input[end] = temp
+        arrayReverseWithSwap(start: start+1, end: end-1)
+    }
+}
+
+arrayReverseWithSwap1(start: 0,end: input.count-1)
+
+print("ReverseArray With Swap is :-",input)
